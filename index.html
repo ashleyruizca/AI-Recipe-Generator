@@ -7,50 +7,53 @@
     <title>AI Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Recipe Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Recipe Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter food of Choice"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        I can help you find the ingredients i.e: Pizza, Rice or Cheeseburger
-        <br />
-        ingredients
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter food of Choice"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="ingredients">
+          I can help you find the ingredients i.e: Pizza, Rice or Cheeseburger
+          <br />
+          ingredients
+        </div>
+      </main>
 
-    <footer>
-      This was coded by
-      <a
-        href="https://www.linkedin.com/in/ashley-ruiz-carrizales-360257159/"
-        target="_blank"
-      >
-        Ashley Ruiz-Carrizales
-      </a>
-      and is open-sourced on
-      <a
-        href="https://github.com/ashleyruizca/AI-Recipe-Generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and is
-      <a
-        href="https://app.netlify.com/sites/ashleyrecipegenerator/configuration/general"
-        target="_blank"
-      >
-        hosted on Netlify</a
-      >
-    </footer>
-    <script src="src/index.js"></script>
+      <footer>
+        This was coded by
+        <a
+          href="https://www.linkedin.com/in/ashley-ruiz-carrizales-360257159/"
+          target="_blank"
+        >
+          Ashley Ruiz-Carrizales
+        </a>
+        and is open-sourced on
+        <a
+          href="https://github.com/ashleyruizca/AI-Recipe-Generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and is
+        <a
+          href="https://app.netlify.com/sites/ashleyrecipegenerator/configuration/general"
+          target="_blank"
+        >
+          hosted on Netlify</a
+        >
+      </footer>
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
