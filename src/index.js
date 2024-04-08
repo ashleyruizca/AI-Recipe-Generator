@@ -14,7 +14,7 @@ function generatorRecipe(event) {
   let apiKey = "4dab170858822f369f2t3478cb64o2fe";
   let prompt = `User instructions: Generate a recipe about ${instructionsInput.value}`;
   let context =
-    "You are a professional chief, your challenge is to create a quick recipe with the ingredient given to you with basic ingredients you can find at home. Use HTML tags for formatting text and please provide emojis related to the food.";
+    "You are a professional chief, your challenge is to create a quick recipe with the ingredient given to you with basic ingredients you can find at home.The recipes need to be provided in HTML. Below Ingredients, include a list using <ul>. Inside the list, add the ingredients to the recipe using measurements and multiple <li> elements. Below. Below Instructions, include a list using <ol>. Inside the list, add the instructions to cook the recipe using measurements and multiple <ol> elements. Please provide emojis related to the search food and provide emojis for ingredients. Do not use ``` html in the beginning. Below Sign the poem with 'Enjoy your meal or dessert 🍰!' inside a <strong> element at the end of the recipe.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let recipeElement = document.querySelector("#recipe");
