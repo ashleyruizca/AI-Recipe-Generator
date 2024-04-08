@@ -1,9 +1,12 @@
 body {
-  background-color: #f9f7fe;
+  background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Livvic", sans-serif;
 }
 
 a {
-  color: #885df1;
+  color: #f6378f;
 }
 
 .container {
@@ -18,18 +21,19 @@ header {
 h1 {
   text-align: center;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 50px;
   line-height: 1.5;
-  color: #272044;
+  color: #323643;
+  font-family: "Courgette", cursive;
 }
 
 .form-container {
-  background-color: white;
+  background-color: #f2f2f2;
   margin-bottom: 30px;
   padding: 20px;
-  background-color: white;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.05);
   border-radius: 10px;
+  opacity: 0.7;
 }
 
 form {
@@ -40,7 +44,6 @@ form {
   line-height: 1.5;
   margin-top: 5px;
   font-size: 12px;
-  opacity: 0.6;
 }
 
 .instructions {
@@ -55,7 +58,7 @@ form {
 
 .submit-button {
   margin-left: 10px;
-  background-color: #885df1;
+  background-color: #606470;
   color: white;
   border: none;
   width: 150px;
@@ -82,6 +85,7 @@ footer {
   text-align: center;
   font-size: 14px;
   margin-top: 30px;
+  font-weight: bolder;
 }
 
 .generaating {
