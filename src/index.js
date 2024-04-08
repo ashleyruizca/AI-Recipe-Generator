@@ -14,7 +14,7 @@ function generatorRecipe(event) {
   let apiKey = "4dab170858822f369f2t3478cb64o2fe";
   let prompt = `User instructions: Generate a recipe about ${instructionsInput.value}`;
   let context =
-    "You are a professional cook, who can cook all around the world, your expertise is to make a quick and easy recipes; your challenge is to provide all the ingredients in basic HTML. Be nice and gentle while providing the ingredients";
+    "You are a professional chief, your challenge is to create a quick recipe with the ingredient given to you with basic ingredients you can find at home. Use HTML tags for formatting text.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayIngredients);
