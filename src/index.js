@@ -17,6 +17,10 @@ function generatorRecipe(event) {
     "You are a professional chief, your challenge is to create a quick recipe with the ingredient given to you with basic ingredients you can find at home. Use HTML tags for formatting text.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class="generating">⌛Generating a ${instructionsInput.value} recipe for you......<div>`;
+
   axios.get(apiUrl).then(displayIngredients);
 }
 
